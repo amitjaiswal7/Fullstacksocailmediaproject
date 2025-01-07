@@ -10,7 +10,7 @@ const AllPost = () => {
   const [userId, setUserId] = useState(null);
   const [commentText, setCommentText] = useState('');
   const [activePostId, setActivePostId] = useState(null); // Track the active post's dialog box
-  const BASE_URL = 'http://localhost:8000/api/allposts';
+  const BASE_URL = 'https://fullstacksocailmediaproject.onrender.com/api/allposts';
 
   useEffect(() => {
     const storedUserId = JSON.parse(localStorage.getItem('user'))?._id;
