@@ -11,7 +11,7 @@ const SuggestedUser = () => {
   const [page, setPage] = useState(1);
   const [total, setTotal] = useState(0);
   const currentUserId = JSON.parse(localStorage.getItem("user"))?._id;
-  const BASE_URL = "http://localhost:8000";
+  const BASE_URL = "https://fullstacksocailmediaproject.onrender.com";
   const navigate = useNavigate();
 
   useEffect(() => {
