@@ -18,7 +18,7 @@ const EditProfile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/api/edit-profile/${currentUserId}`);
+        const response = await axios.get(`https://fullstacksocailmediaproject.onrender.com/api/edit-profile/${currentUserId}`);
         const profile = response.data.profile;
         setFormData({
           name: profile.name || '',
@@ -58,7 +58,7 @@ const EditProfile = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:8000/api/edit-profile/${currentUserId}`,
+        `https://fullstacksocailmediaproject.onrender.com/api/edit-profile/${currentUserId}`,
         updateData,
         { headers: { 'Content-Type': 'multipart/form-data' } }
       );
