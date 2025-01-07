@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const NotificationPage = () => {
   const [notifications, setNotifications] = useState([]);
   const userId = JSON.parse(localStorage.getItem('user'))?._id; // Current user ID
-  const BASE_URL = 'http://localhost:8000/api/allposts';
+  const BASE_URL = 'https://fullstacksocailmediaproject.onrender.com/api/allposts';
 
   useEffect(() => {
     const fetchNotifications = async () => {
