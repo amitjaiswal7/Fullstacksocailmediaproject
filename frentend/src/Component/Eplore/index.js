@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const Explore = () => {
   const [posts, setPosts] = useState([]);
-  const BASE_URL = 'http://localhost:8000/api/allposts';
+  const BASE_URL = 'https://fullstacksocailmediaproject.onrender.com/api/allposts';
   const navigate = useNavigate();
 
   useEffect(() => {
