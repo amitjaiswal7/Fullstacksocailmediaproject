@@ -12,7 +12,7 @@ const ProfilePage = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/api/profile/${currentUserId}`);
+        const response = await axios.get(`https://fullstacksocailmediaproject.onrender.com/api/profile/${currentUserId}`);
         setProfile(response.data.profile);
       } catch (error) {
         toast.error('Error fetching profile data');
@@ -65,7 +65,7 @@ const ProfilePage = () => {
           {profile.postsData.map((post, index) => (
             <div className="ProfilePage__post" key={post._id || index}>
               <img
-                src={`http://localhost:8000/${post.image}`}
+                src={`https://fullstacksocailmediaproject.onrender.com/${post.image}`}
                 alt={`Post ${index + 1}`}
                 onError={(e) => (e.target.src = logo)}
                 className="ProfilePage__postImage"
