@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:8000/api' });
+const API = axios.create({ baseURL: 'https://fullstacksocailmediaproject.onrender.com/api' });
 
 export const fetchUsers = () => API.get('/users');
 export const fetchMessages = (senderId, receiverId) =>
