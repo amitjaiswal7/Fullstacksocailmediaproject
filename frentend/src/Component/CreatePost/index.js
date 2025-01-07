@@ -30,7 +30,7 @@ const CreatePost = () => {
     postData.append('image', formData.image);
 
     try {
-      const response = await axios.post('http://localhost:8000/api/posts', postData, {
+      const response = await axios.post('https://fullstacksocailmediaproject.onrender.com/api/posts', postData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       toast.success(response.data.message);
