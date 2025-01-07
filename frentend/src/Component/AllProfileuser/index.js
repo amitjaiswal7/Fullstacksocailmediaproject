@@ -12,7 +12,7 @@ const AllUserProfile = () => {
   const [page, setPage] = useState(1);
   const { userId } = useParams();
   const currentUserId = JSON.parse(localStorage.getItem("user"))?._id;
-  const BASE_URL = "http://localhost:8000";
+  const BASE_URL = "https://fullstacksocailmediaproject.onrender.com";
 
   useEffect(() => {
     const fetchProfile = async () => {
