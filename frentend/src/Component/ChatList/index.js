@@ -4,7 +4,7 @@ import { FaEdit, FaChevronDown, FaPhoneAlt, FaVideo, FaQuestionCircle, FaMicroph
 import { fetchUsers, fetchMessages, sendMessage } from '../Socketio/index';
 import { io } from "socket.io-client";
 
-const BASE_URL = "http://localhost:8000"; // Update with your backend URL
+const BASE_URL = "https://fullstacksocailmediaproject.onrender.com"; // Update with your backend URL
 const socket = io(BASE_URL);
 
 const ChatPage = () => {
