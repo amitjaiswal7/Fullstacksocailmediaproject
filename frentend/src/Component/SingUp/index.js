@@ -19,7 +19,7 @@ const SignUp = () => {
     e.preventDefault();
     try {
       // Make API call to sign up
-      const response = await axios.post("http://localhost:8000/api/auth/signup", formData);
+      const response = await axios.post("https://fullstacksocailmediaproject.onrender.com/api/auth/signup", formData);
       const { data } = response;
 
       if (data && data.success) {
