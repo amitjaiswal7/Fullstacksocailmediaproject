@@ -6,11 +6,11 @@ const UserSearch = () => {
   const [username, setUsername] = useState('');
   const [userData, setUserData] = useState(null);
   const [error, setError] = useState('');
-  const BASE_URL = "http://localhost:8000";
+  const BASE_URL = "https://fullstacksocailmediaproject.onrender.com";
   const handleSearch = async () => {
     try {
       setError('');
-      const response = await axios.get(`http://localhost:8000/api/frent/search?username=${username}`);
+      const response = await axios.get(`https://fullstacksocailmediaproject.onrender.com/api/frent/search?username=${username}`);
       setUserData(response.data);
     } catch (err) {
       setUserData(null);
