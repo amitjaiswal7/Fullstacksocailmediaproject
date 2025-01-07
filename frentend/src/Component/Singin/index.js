@@ -20,7 +20,7 @@ const SignIn = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8000/api/auth/singin", formData);
+      const res = await axios.post("https://fullstacksocailmediaproject.onrender.com/api/auth/singin", formData);
 
       if (res && res.data.success) {
         toast.success(res.data.message);
